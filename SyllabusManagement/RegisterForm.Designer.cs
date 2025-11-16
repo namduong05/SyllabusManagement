@@ -71,6 +71,7 @@
             this.txtRegConfirmPassword.Name = "txtRegConfirmPassword";
             this.txtRegConfirmPassword.Size = new System.Drawing.Size(273, 30);
             this.txtRegConfirmPassword.TabIndex = 16;
+            this.txtRegConfirmPassword.UseSystemPasswordChar = true;
             // 
             // txtRegUsername
             // 
@@ -127,6 +128,7 @@
             this.txtRegPassword.Name = "txtRegPassword";
             this.txtRegPassword.Size = new System.Drawing.Size(273, 30);
             this.txtRegPassword.TabIndex = 15;
+            this.txtRegPassword.UseSystemPasswordChar = true;
             // 
             // label5
             // 

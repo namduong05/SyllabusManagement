@@ -238,5 +238,13 @@ namespace SyllabusManagement
             cmbMonHoc.SelectedIndex = 0;
             selectedDeCuongID = 0;
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            this.Close();
+        }
     }
 }

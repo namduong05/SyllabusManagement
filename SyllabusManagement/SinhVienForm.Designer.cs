@@ -36,13 +36,14 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeCuong)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(167, 64);
+            this.txtSearch.Location = new System.Drawing.Point(167, 89);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(423, 30);
             this.txtSearch.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             this.txtLink.Enabled = false;
             this.txtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLink.Location = new System.Drawing.Point(167, 134);
+            this.txtLink.Location = new System.Drawing.Point(167, 161);
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(423, 30);
             this.txtLink.TabIndex = 1;
@@ -59,7 +60,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(614, 57);
+            this.btnSearch.Location = new System.Drawing.Point(614, 82);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(105, 46);
             this.btnSearch.TabIndex = 2;
@@ -70,7 +71,7 @@
             // btnCopyLink
             // 
             this.btnCopyLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopyLink.Location = new System.Drawing.Point(614, 130);
+            this.btnCopyLink.Location = new System.Drawing.Point(614, 157);
             this.btnCopyLink.Name = "btnCopyLink";
             this.btnCopyLink.Size = new System.Drawing.Size(105, 41);
             this.btnCopyLink.TabIndex = 3;
@@ -81,7 +82,7 @@
             // dgvDeCuong
             // 
             this.dgvDeCuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDeCuong.Location = new System.Drawing.Point(21, 193);
+            this.dgvDeCuong.Location = new System.Drawing.Point(20, 228);
             this.dgvDeCuong.Name = "dgvDeCuong";
             this.dgvDeCuong.RowHeadersWidth = 100;
             this.dgvDeCuong.RowTemplate.Height = 24;
@@ -104,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(64, 69);
+            this.label2.Location = new System.Drawing.Point(64, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 25);
             this.label2.TabIndex = 6;
@@ -114,17 +115,28 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 134);
+            this.label3.Location = new System.Drawing.Point(64, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = "Link:";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(670, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(108, 36);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "Đâng xuất";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // SinhVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 486);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblWelcome);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

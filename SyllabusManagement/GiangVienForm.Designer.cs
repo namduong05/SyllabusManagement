@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeCuong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,13 +76,13 @@
             this.dgvDeCuong.Name = "dgvDeCuong";
             this.dgvDeCuong.RowHeadersWidth = 51;
             this.dgvDeCuong.RowTemplate.Height = 24;
-            this.dgvDeCuong.Size = new System.Drawing.Size(576, 351);
+            this.dgvDeCuong.Size = new System.Drawing.Size(626, 351);
             this.dgvDeCuong.TabIndex = 3;
             this.dgvDeCuong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDeCuong_CellClick);
             // 
             // btnAddDeCuong
             // 
-            this.btnAddDeCuong.Location = new System.Drawing.Point(535, 34);
+            this.btnAddDeCuong.Location = new System.Drawing.Point(535, 66);
             this.btnAddDeCuong.Name = "btnAddDeCuong";
             this.btnAddDeCuong.Size = new System.Drawing.Size(80, 36);
             this.btnAddDeCuong.TabIndex = 4;
@@ -91,7 +92,7 @@
             // 
             // btnEditDeCuong
             // 
-            this.btnEditDeCuong.Location = new System.Drawing.Point(535, 94);
+            this.btnEditDeCuong.Location = new System.Drawing.Point(535, 121);
             this.btnEditDeCuong.Name = "btnEditDeCuong";
             this.btnEditDeCuong.Size = new System.Drawing.Size(80, 35);
             this.btnEditDeCuong.TabIndex = 5;
@@ -101,7 +102,7 @@
             // 
             // btnDeleteDeCuong
             // 
-            this.btnDeleteDeCuong.Location = new System.Drawing.Point(535, 162);
+            this.btnDeleteDeCuong.Location = new System.Drawing.Point(535, 174);
             this.btnDeleteDeCuong.Name = "btnDeleteDeCuong";
             this.btnDeleteDeCuong.Size = new System.Drawing.Size(80, 35);
             this.btnDeleteDeCuong.TabIndex = 6;
@@ -124,11 +125,11 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(264, 9);
+            this.lblWelcome.Location = new System.Drawing.Point(197, 20);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(53, 20);
+            this.lblWelcome.Size = new System.Drawing.Size(26, 20);
             this.lblWelcome.TabIndex = 8;
-            this.lblWelcome.Text = "label1";
+            this.lblWelcome.Text = "Hi";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -161,11 +162,23 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Tìm kiếm:";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(562, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(95, 44);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // GiangVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 593);
+            this.ClientSize = new System.Drawing.Size(669, 593);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,5 +214,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
