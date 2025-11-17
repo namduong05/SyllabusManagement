@@ -309,7 +309,7 @@ namespace SyllabusManagement
                     for (int i = 0; i < dgvReport.Columns.Count; i++)
                     {
                         sb.Append(dgvReport.Columns[i].HeaderText);
-                        if (i < dgvReport.Columns.Count - 1) sb.Append(",");
+                        if (i < dgvReport.Columns.Count - 1) sb.Append(";");
                     }
                     sb.AppendLine();
 
@@ -318,8 +318,9 @@ namespace SyllabusManagement
                     {
                         for (int i = 0; i < dgvReport.Columns.Count; i++)
                         {
-                            sb.Append(row.Cells[i].Value.ToString());
-                            if (i < dgvReport.Columns.Count - 1) sb.Append(",");
+                            string cellValue = row.Cells[i].Value?.ToString() ?? "";
+                            sb.Append(cellValue);
+                            if (i < dgvReport.Columns.Count - 1) sb.Append(";");
                         }
                         sb.AppendLine();
                     }
