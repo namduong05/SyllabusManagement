@@ -144,17 +144,16 @@
             // 
             // txtGvPassword
             // 
-            this.txtGvPassword.Enabled = false;
-            this.txtGvPassword.Location = new System.Drawing.Point(486, 96);
+            this.txtGvPassword.Location = new System.Drawing.Point(459, 99);
             this.txtGvPassword.Name = "txtGvPassword";
-            this.txtGvPassword.Size = new System.Drawing.Size(100, 24);
+            this.txtGvPassword.Size = new System.Drawing.Size(157, 24);
             this.txtGvPassword.TabIndex = 7;
             this.txtGvPassword.UseSystemPasswordChar = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(405, 96);
+            this.label5.Location = new System.Drawing.Point(380, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 18);
             this.label5.TabIndex = 6;
@@ -162,29 +161,29 @@
             // 
             // txtGvUsername
             // 
-            this.txtGvUsername.Location = new System.Drawing.Point(486, 33);
+            this.txtGvUsername.Location = new System.Drawing.Point(459, 30);
             this.txtGvUsername.Name = "txtGvUsername";
-            this.txtGvUsername.Size = new System.Drawing.Size(100, 24);
+            this.txtGvUsername.Size = new System.Drawing.Size(157, 24);
             this.txtGvUsername.TabIndex = 5;
             // 
             // txtGvEmail
             // 
-            this.txtGvEmail.Location = new System.Drawing.Point(160, 99);
+            this.txtGvEmail.Location = new System.Drawing.Point(118, 99);
             this.txtGvEmail.Name = "txtGvEmail";
-            this.txtGvEmail.Size = new System.Drawing.Size(100, 24);
+            this.txtGvEmail.Size = new System.Drawing.Size(233, 24);
             this.txtGvEmail.TabIndex = 4;
             // 
             // txtGvFullName
             // 
-            this.txtGvFullName.Location = new System.Drawing.Point(156, 35);
+            this.txtGvFullName.Location = new System.Drawing.Point(118, 30);
             this.txtGvFullName.Name = "txtGvFullName";
-            this.txtGvFullName.Size = new System.Drawing.Size(100, 24);
+            this.txtGvFullName.Size = new System.Drawing.Size(233, 24);
             this.txtGvFullName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(399, 38);
+            this.label4.Location = new System.Drawing.Point(376, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 18);
             this.label4.TabIndex = 2;
@@ -226,7 +225,7 @@
             // btnReportByLecturer
             // 
             this.btnReportByLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportByLecturer.Location = new System.Drawing.Point(794, 224);
+            this.btnReportByLecturer.Location = new System.Drawing.Point(759, 169);
             this.btnReportByLecturer.Name = "btnReportByLecturer";
             this.btnReportByLecturer.Size = new System.Drawing.Size(109, 51);
             this.btnReportByLecturer.TabIndex = 3;
@@ -237,7 +236,7 @@
             // btnReportByCourse
             // 
             this.btnReportByCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportByCourse.Location = new System.Drawing.Point(794, 115);
+            this.btnReportByCourse.Location = new System.Drawing.Point(759, 89);
             this.btnReportByCourse.Name = "btnReportByCourse";
             this.btnReportByCourse.Size = new System.Drawing.Size(109, 54);
             this.btnReportByCourse.TabIndex = 2;
@@ -248,9 +247,9 @@
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.Location = new System.Drawing.Point(794, 27);
+            this.btnExport.Location = new System.Drawing.Point(759, 17);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(109, 31);
+            this.btnExport.Size = new System.Drawing.Size(109, 51);
             this.btnExport.TabIndex = 1;
             this.btnExport.Text = "Xuất báo cáo";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -263,7 +262,7 @@
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.RowHeadersWidth = 51;
             this.dgvReport.RowTemplate.Height = 24;
-            this.dgvReport.Size = new System.Drawing.Size(738, 521);
+            this.dgvReport.Size = new System.Drawing.Size(713, 521);
             this.dgvReport.TabIndex = 0;
             this.dgvReport.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGiangVien_CellClick);
             // 
